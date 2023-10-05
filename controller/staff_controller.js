@@ -6,7 +6,7 @@ const Insert = async (req, res) => {
     console.log("data",req.body)
     try {
         const image  = req.file.filename
-        const { staff_name, employee_code, doj, relationship, gcontact, paddress, taddress, contact_no1, contact_no2, email, dob, blood_group, gender, marital_status, pan_no, adhar_no ,employee_type,employee_category,gname,role_id,designation} = req.body
+        const { staff_name, employee_code, doj, relationship, gcontact, paddress, taddress, contact_no1, contact_no2, email, dob, blood_group, gender, marital_status, pan_no, adhar_no ,employee_type,employee_category,gname,role_id,designation,status} = req.body
     //    const  {} = req.body.
 
         const s1 = new Staff({
@@ -32,7 +32,8 @@ const Insert = async (req, res) => {
             gender: gender,
             marital_status: marital_status,
             pan_no: pan_no,
-            adhar_no: adhar_no
+            adhar_no: adhar_no,
+            status: status
 
         })
 
