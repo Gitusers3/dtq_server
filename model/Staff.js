@@ -114,7 +114,10 @@ const Staff = new Schema({
     adhar_no: {
         type: String,
         required: false
-
+    },
+    status:{
+        type: String,
+        required: false
     }
 })
 
